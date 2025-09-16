@@ -90,7 +90,6 @@ class TugasLayout extends StatelessWidget {
 
                     SizedBox(height: 15),
 
-    
                     Container(
                       height: 120,
                       width: 200,
