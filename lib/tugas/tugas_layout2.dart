@@ -16,7 +16,7 @@ class TugasLayout2 extends StatelessWidget {
                 gradient: LinearGradient(
                   begin: Alignment.topCenter,
                   end: Alignment.bottomCenter,
-                  colors: [Colors.green,Color.fromARGB(255, 160, 239, 118)],
+                colors: [Colors.green,Color.fromARGB(255, 167, 248, 124)],
                 ),
               ),
             ),
