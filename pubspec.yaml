@@ -17,3 +17,11 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+
+  assets:
+  - gambar/bunga.png
+  - gambar/pink2.jpg
+  - gambar/001.png
+  - gambar/002.png
+  
+

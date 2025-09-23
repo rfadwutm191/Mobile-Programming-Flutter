@@ -11,7 +11,6 @@ class TugasLayout extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // Greeting
             Row(
               children: [
                 Text("Good Morning, ", style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),),
