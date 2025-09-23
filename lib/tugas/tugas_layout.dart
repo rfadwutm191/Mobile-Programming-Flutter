@@ -19,7 +19,6 @@ class TugasLayout extends StatelessWidget {
             ),
 
             SizedBox(height: 20),
-
             Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -89,7 +88,6 @@ class TugasLayout extends StatelessWidget {
 
                     SizedBox(height: 15),
 
-    
                     Container(
                       height: 120,
                       width: 200,
