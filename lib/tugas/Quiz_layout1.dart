@@ -150,6 +150,18 @@ class QuizLayout1 extends StatelessWidget {
                           ),
                         ),
                       ),
+                      SizedBox(width: 20),
+                      Container(
+                        width: 270,
+                        height: 200,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.all(Radius.circular(20)),
+                          image: DecorationImage(
+                            image: AssetImage("gambar/ex4.png"),
+                            fit: BoxFit.fill,
+                          ),
+                        ),
+                      ),
                     ],
                   ),
                 ],
