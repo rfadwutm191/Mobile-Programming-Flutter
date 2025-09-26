@@ -143,8 +143,17 @@ class QuizLayout1 extends StatelessWidget {
 
             SizedBox(height: 25,),
             Align(
-              alignment: Alignment.centerLeft
-              
+              alignment: Alignment.centerLeft,
+              child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text("Area of focus", style: TextStyle(fontSize: 17),),
+                    Row(
+
+                    )
+                  ],
+              ),
+
             )
 
           ],
