@@ -7,7 +7,7 @@ class QuizLayout1 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 60, vertical: 20),
+        padding: EdgeInsets.symmetric(horizontal: 60, vertical: 20),
         child: Column(
           children: [
             Row(
@@ -19,7 +19,7 @@ class QuizLayout1 extends StatelessWidget {
                   style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
                 ),
                 Row(
-                  children: const [
+                  children: [
                     Icon(Icons.chevron_left),
                     Icon(Icons.calendar_month, size: 20),
                     Icon(Icons.chevron_right),
@@ -28,12 +28,12 @@ class QuizLayout1 extends StatelessWidget {
               ],
             ),
 
-            const SizedBox(height: 20),
+            SizedBox(height: 20),
 
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               crossAxisAlignment: CrossAxisAlignment.start,
-              children: const [
+              children: [
                 Text(
                   "Your Program",
                   style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
@@ -53,9 +53,9 @@ class QuizLayout1 extends StatelessWidget {
 
             Container(
               width: double.infinity,
-              height: 250,
+              height: 200,
               decoration: BoxDecoration(
-                gradient: const LinearGradient(
+                gradient: LinearGradient(
                   colors: [
                     Colors.purple,
                     Color.fromARGB(41, 184, 0, 216),
@@ -63,7 +63,7 @@ class QuizLayout1 extends StatelessWidget {
                   begin: Alignment.topLeft,
                   end: Alignment.bottomRight,
                 ),
-                borderRadius: const BorderRadius.only(
+                borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(35),
                   topRight: Radius.circular(200),
                   bottomLeft: Radius.circular(35),
@@ -71,23 +71,37 @@ class QuizLayout1 extends StatelessWidget {
                 ),
               ),
               child: Padding(
-                padding: const EdgeInsets.all(16),
+                padding: EdgeInsets.all(16),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
-                  children: const [
-                    Text(
-                      "Next Workout",
-                      style: TextStyle(color: Colors.white70, fontSize: 14),
-                    ),
-                    SizedBox(height: 8),
-                    Text(
-                      "Lets Toning\nand Glutes Workout",
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 20,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
+                  children: [
+                    Text("Next Workout",style: TextStyle(color: const Color.fromARGB(241, 248, 248, 248), fontSize: 18)),
+                    Text("Lets Toning",style: TextStyle(color: Colors.white,fontSize: 25,fontWeight: FontWeight.bold)),
+                    Text("and Glutes Workout",style: TextStyle(color: Colors.white,fontSize: 25,fontWeight: FontWeight.bold)),
+                    SizedBox(height: 20),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Row(
+                          children: [
+                            Icon(Icons.timer, size:16, color: Colors.white,),
+                            SizedBox(width: 5,),
+                            Text("60 min", style: TextStyle(color:Colors.white, fontSize: 14),),
+                          ],
+                        ),
+                        Container(
+                          margin: EdgeInsets.only(right: 30,),
+                          height: 50,
+                          width: 50,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.all(Radius.circular(50)),
+                            color: Colors.white,
+                          ),
+                          child: Icon(Icons.play_arrow, color: Colors.purple,),
+                        ),
+                      ],
+                    )
                   ],
                 ),
               ),
