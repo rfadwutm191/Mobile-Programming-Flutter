@@ -112,13 +112,14 @@ class QuizLayout1 extends StatelessWidget {
               children: [
                 Container(
                   width: 900,
-                  height: 100,
+                  height: 120,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.all(Radius.circular(20)),
                     image: DecorationImage(
-                      image: AssetImage("gambar/card.jpg"), fit: BoxFit.fill,),
+                    image: AssetImage("gambar/card.jpg"), fit: BoxFit.fill,),
                   ),
                 ),
+
                 Positioned(
                   left: 15,
                   bottom: 30,
@@ -130,12 +131,12 @@ class QuizLayout1 extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text("You are going greear", style: TextStyle(
-                        fontWeight: FontWeight.bold, color: Colors.blue, fontSize: 15,),
-                      ),
-                    ],
+                      Text("You are going great", style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blue, fontSize: 18),),
+                      Text("keep it up", style: TextStyle(color: Colors.grey, fontSize: 17),),
+                      Text("stick to your plan", style: TextStyle(color: Colors.grey, fontSize: 17),),
+                      ],
                   ),
-                )git
+                ),
               ],
             )
 
