@@ -85,7 +85,7 @@ class QuizLayout1 extends StatelessWidget {
                       children: [
                         Row(
                           children: [
-                            Icon(Icons.timer, size:16, color: Colors.white,),
+                            Icon(Icons.timer, size:18, color: Colors.white,),
                             SizedBox(width: 5,),
                             Text("60 min", style: TextStyle(color:Colors.white, fontSize: 14),),
                           ],
@@ -99,13 +99,46 @@ class QuizLayout1 extends StatelessWidget {
                             color: Colors.white,
                           ),
                           child: Icon(Icons.play_arrow, color: Colors.purple,),
-                        ),
+                         ),
                       ],
                     )
                   ],
                 ),
               ),
             ),
+            SizedBox(height: 40),
+            Stack(
+            clipBehavior: Clip.none,
+              children: [
+                Container(
+                  width: 900,
+                  height: 100,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.all(Radius.circular(20)),
+                    image: DecorationImage(
+                      image: AssetImage("gambar/card.jpg"), fit: BoxFit.fill,),
+                  ),
+                ),
+                Positioned(
+                  left: 15,
+                  bottom: 30,
+                  child: Image.asset("gambar/figure1.png", width: 90),
+                ),
+                Positioned(
+                  right: 110,
+                  top: 20,
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text("You are going greear", style: TextStyle(
+                        fontWeight: FontWeight.bold, color: Colors.blue, fontSize: 15,),
+                      ),
+                    ],
+                  ),
+                )git
+              ],
+            )
+
           ],
         ),
       ),
