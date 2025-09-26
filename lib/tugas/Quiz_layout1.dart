@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 class QuizLayout1 extends StatelessWidget {
   const QuizLayout1({super.key});
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -34,18 +33,8 @@ class QuizLayout1 extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(
-                  "Your Program",
-                  style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
-                ),
-                Text(
-                  "Details >",
-                  style: TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.blue,
-                  ),
-                ),
+                Text("Your Program",style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),),
+                Text("Details >",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold,color: Colors.blue,),),
               ],
             ),
 
@@ -56,10 +45,7 @@ class QuizLayout1 extends StatelessWidget {
               height: 200,
               decoration: BoxDecoration(
                 gradient: LinearGradient(
-                  colors: [
-                    Colors.purple,
-                    Color.fromARGB(41, 184, 0, 216),
-                  ],
+                  colors: [Colors.purple, Color.fromARGB(41, 184, 0, 216)],
                   begin: Alignment.topLeft,
                   end: Alignment.bottomRight,
                 ),
@@ -75,9 +61,10 @@ class QuizLayout1 extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text("Next Workout",style: TextStyle(color: const Color.fromARGB(241, 248, 248, 248), fontSize: 18)),
-                    Text("Lets Toning",style: TextStyle(color: Colors.white,fontSize: 25,fontWeight: FontWeight.bold)),
-                    Text("and Glutes Workout",style: TextStyle(color: Colors.white,fontSize: 25,fontWeight: FontWeight.bold)),
+                    Text("Next Workout", style: TextStyle(color: const Color.fromARGB(241, 248, 248, 248),fontSize: 18),),
+                    Text("Lets Toning", style: TextStyle(color: Colors.white, fontSize: 25,fontWeight: FontWeight.bold),),
+                    Text("and Glutes Workout", style: TextStyle(color: Colors.white,fontSize: 25,fontWeight: FontWeight.bold),),
+                      
                     SizedBox(height: 20),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -85,30 +72,30 @@ class QuizLayout1 extends StatelessWidget {
                       children: [
                         Row(
                           children: [
-                            Icon(Icons.timer, size:18, color: Colors.white,),
-                            SizedBox(width: 5,),
-                            Text("60 min", style: TextStyle(color:Colors.white, fontSize: 14),),
+                            Icon(Icons.timer, size: 18, color: Colors.white),
+                            SizedBox(width: 5),
+                            Text("60 min", style: TextStyle(color: Colors.white,fontSize: 14),),
                           ],
                         ),
                         Container(
-                          margin: EdgeInsets.only(right: 30,),
+                          margin: EdgeInsets.only(right: 30),
                           height: 50,
                           width: 50,
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.all(Radius.circular(50)),
                             color: Colors.white,
                           ),
-                          child: Icon(Icons.play_arrow, color: Colors.purple,),
-                         ),
+                          child: Icon(Icons.play_arrow, color: Colors.purple),
+                        ),
                       ],
-                    )
+                    ),
                   ],
                 ),
               ),
             ),
             SizedBox(height: 40),
             Stack(
-            clipBehavior: Clip.none,
+              clipBehavior: Clip.none,
               children: [
                 Container(
                   width: 900,
@@ -116,11 +103,11 @@ class QuizLayout1 extends StatelessWidget {
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.all(Radius.circular(20)),
                     image: DecorationImage(
-                    image: AssetImage("gambar/card.jpg"), fit: BoxFit.fill,),
+                      image: AssetImage("gambar/card.jpg"),
+                      fit: BoxFit.fill,
+                    ),
                   ),
                 ),
-
-
                 Positioned(
                   left: 15,
                   bottom: 30,
@@ -132,30 +119,42 @@ class QuizLayout1 extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text("You are going great", style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blue, fontSize: 18),),
-                      Text("keep it up", style: TextStyle(color: Colors.grey, fontSize: 17),),
-                      Text("stick to your plan", style: TextStyle(color: Colors.grey, fontSize: 17),),
-                      ],
+                      Text("You are going great", style: TextStyle(fontWeight: FontWeight.bold,color: Colors.blue,fontSize: 18,),),
+                      Text("keep it up",style: TextStyle(color: Colors.grey, fontSize: 17),),
+                      Text("stick to your plan",style: TextStyle(color: Colors.grey, fontSize: 17),),
+                    ],
                   ),
                 ),
               ],
             ),
 
-            SizedBox(height: 25,),
+            SizedBox(height: 30),
             Align(
               alignment: Alignment.centerLeft,
               child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text("Area of focus", style: TextStyle(fontSize: 17),),
-                    Row(
-
-                    )
-                  ],
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text("Area of Focus", style: TextStyle(fontSize: 16)),
+                  SizedBox(height: 20),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Container(
+                        width: 270,
+                        height: 200,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.all(Radius.circular(20)),
+                          image: DecorationImage(
+                            image: AssetImage("gambar/ex3.png"),
+                            fit: BoxFit.fill,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
               ),
-
-            )
-
+            ),
           ],
         ),
       ),
