@@ -120,6 +120,7 @@ class QuizLayout1 extends StatelessWidget {
                   ),
                 ),
 
+
                 Positioned(
                   left: 15,
                   bottom: 30,
@@ -138,6 +139,12 @@ class QuizLayout1 extends StatelessWidget {
                   ),
                 ),
               ],
+            ),
+
+            SizedBox(height: 25,),
+            Align(
+              alignment: Alignment.centerLeft
+              
             )
 
           ],
